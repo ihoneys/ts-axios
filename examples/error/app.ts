@@ -6,7 +6,7 @@ axios({
 }).then((res) => {
   console.log(res)
 }).catch((e) => {
-  console.log(e)
+  console.log(e.message)
 })
 
 axios({
@@ -15,7 +15,7 @@ axios({
 }).then((res) => {
   console.log(res)
 }).catch((e) => {
-  console.log(e)
+  console.log(e.message)
 })
 
 setTimeout(() => {
@@ -25,7 +25,7 @@ setTimeout(() => {
   }).then((res) => {
     console.log(res)
   }).catch((e) => {
-    console.log(e)
+    console.log(e.message)
   })
 }, 5000)
 
