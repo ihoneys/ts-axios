@@ -16,7 +16,8 @@ export interface AxiosRequestConfig {
     params?: any,
     headers?: any,
     responseType?: XMLHttpRequestResponseType,
-    timeout?: number
+    timeout?: number,
+    [propName: string]: any
 }
 
 export interface AxiosResponse<T = any> {
